@@ -3,6 +3,10 @@
 Pricing European options by Monte Carlo simulation under the Black-Scholes-Merton
 model, benchmarked against the closed-form solution.
 
+📓 **[Read the notebook walkthrough](notebooks/monte_carlo_option_pricing.ipynb)** —
+theory, simulated-distribution checks, variance reduction, convergence analysis,
+Greeks, and sensitivity sweeps, all with rendered plots.
+
 ![Monte Carlo convergence to the Black-Scholes price](assets/convergence.png)
 
 ## Method
@@ -48,6 +52,7 @@ src/mc_option_pricing/
     monte_carlo.py      GBM simulation, mc_price, mc_greeks
 tests/test_pricer.py    convergence, parity, and variance-reduction checks
 examples/run_example.py prints a price/Greeks table and saves a convergence plot
+notebooks/monte_carlo_option_pricing.ipynb   narrative walkthrough with plots
 ```
 
 ## Usage
@@ -56,6 +61,10 @@ examples/run_example.py prints a price/Greeks table and saves a convergence plot
 pip install -r requirements.txt
 python examples/run_example.py   # or: pip install -e .[dev]
 pytest
+
+# notebook (installs the package + jupyter/pandas)
+pip install -e .[notebook]
+jupyter lab notebooks/monte_carlo_option_pricing.ipynb
 ```
 
 ```python
