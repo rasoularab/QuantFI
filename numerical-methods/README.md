@@ -6,3 +6,4 @@ problems, each as a self-contained project with its own tests and README.
 | Project | Description |
 |---|---|
 | [monte-carlo-option-pricing](monte-carlo-option-pricing/) | European option pricing via Monte Carlo simulation under Black-Scholes-Merton, with variance reduction and Greeks, benchmarked against the closed-form solution. |
+| [finite-difference-option-pricing](finite-difference-option-pricing/) | European option pricing by solving the Black-Scholes PDE with a Crank-Nicolson finite-difference scheme (Rannacher-smoothed), with Greeks read off the grid, benchmarked against the closed-form solution. |
