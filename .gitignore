@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Example scripts write regenerable output here; committed reference
+# plots for READMEs live under each project's assets/ instead.
+**/examples/output/
