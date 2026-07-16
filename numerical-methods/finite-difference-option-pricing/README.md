@@ -4,6 +4,12 @@ Pricing European options by solving the Black-Scholes PDE with a
 Crank-Nicolson finite-difference scheme, benchmarked against the closed-form
 solution.
 
+📓 **[Read the notebook walkthrough](notebooks/finite_difference_option_pricing.ipynb)** —
+a from-first-principles derivation of the Black-Scholes PDE, why explicit
+time-stepping blows up (demonstrated), how the strike's kink corrupts gamma
+and how Rannacher smoothing fixes it (demonstrated), and full validation
+against the closed-form solution.
+
 ![Crank-Nicolson convergence to the Black-Scholes price](assets/convergence.png)
 
 ## Method
@@ -61,6 +67,7 @@ src/fd_option_pricing/
     finite_difference.py    Crank-Nicolson PDE solver, crank_nicolson_price, fd_greeks
 tests/test_pricer.py        convergence order, parity, and Greeks checks
 examples/run_example.py     prints a price/Greeks table and saves convergence + price-curve plots
+notebooks/finite_difference_option_pricing.ipynb   from-first-principles learning notebook
 ```
 
 ## Usage
@@ -69,6 +76,10 @@ examples/run_example.py     prints a price/Greeks table and saves convergence + 
 pip install -r requirements.txt
 python examples/run_example.py   # or: pip install -e .[dev]
 pytest
+
+# notebook (installs the package + jupyter/pandas)
+pip install -e .[notebook]
+jupyter lab notebooks/finite_difference_option_pricing.ipynb
 ```
 
 ```python
