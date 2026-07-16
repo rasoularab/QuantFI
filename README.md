@@ -1,7 +1,8 @@
-# Portfolio
+# QuantFI
 
-A collection of self-contained projects, organized by topic. Each project has
-its own README, tests, and instructions to run it.
+A portfolio of self-contained quantitative finance / numerical computing
+projects, organized by topic. Each project has its own README, tests, and
+instructions to run it.
 
 ## Sections
 
