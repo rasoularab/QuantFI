@@ -8,3 +8,5 @@ instructions to run it.
 
 - [Numerical Methods](numerical-methods/) — numerical/computational methods
   applied to quantitative problems.
+- [Fixed Income](fixed-income/) — short-rate and term-structure models for
+  pricing fixed income instruments.
